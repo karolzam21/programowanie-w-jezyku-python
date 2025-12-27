@@ -1,1 +1,1 @@
-test
+test zmiana1 zmiana2 zmiana3
