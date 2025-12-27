@@ -1,0 +1,48 @@
+C:\Users\Loraken\programowanie-w-jezyku-python\.venv\Scripts\python.exe "C:/Program Files/JetBrains/PyCharm 2025.2.4/plugins/python-ce/helpers/pycharm/_jb_pytest_runner.py" --path C:\Users\Loraken\programowanie-w-jezyku-python\tests
+Testing started at 20:20 ...
+Launching pytest with arguments C:\Users\Loraken\programowanie-w-jezyku-python\tests --no-header --no-summary -q in C:\Users\Loraken\programowanie-w-jezyku-python\tests
+
+============================= test session starts =============================
+collecting ... collected 37 items
+
+test_logic.py::TestIsPalindrome::test_is_palindrome[kajak-True] PASSED   [  2%]
+test_logic.py::TestIsPalindrome::test_is_palindrome[Koby\u0142a ma ma\u0142y bok-True] PASSED [  5%]
+test_logic.py::TestIsPalindrome::test_is_palindrome[python-False] PASSED [  8%]
+test_logic.py::TestIsPalindrome::test_is_palindrome[-True] PASSED        [ 10%]
+test_logic.py::TestIsPalindrome::test_is_palindrome[A-True] PASSED       [ 13%]
+test_logic.py::TestFibonacci::test_fibonacci_values[0-0] PASSED          [ 16%]
+test_logic.py::TestFibonacci::test_fibonacci_values[1-1] PASSED          [ 18%]
+test_logic.py::TestFibonacci::test_fibonacci_values[5-5] PASSED          [ 21%]
+test_logic.py::TestFibonacci::test_fibonacci_values[10-55] PASSED        [ 24%]
+test_logic.py::TestFibonacci::test_fibonacci_negative_raises PASSED      [ 27%]
+test_logic.py::TestCountVowels::test_count_vowels[Python-2] PASSED       [ 29%]
+test_logic.py::TestCountVowels::test_count_vowels[AEIOUY-6] PASSED       [ 32%]
+test_logic.py::TestCountVowels::test_count_vowels[bcd-0] PASSED          [ 35%]
+test_logic.py::TestCountVowels::test_count_vowels[-0] PASSED             [ 37%]
+test_logic.py::TestCountVowels::test_count_vowels[Pr\xf3ba \u017c\xf3\u0142wia-3] PASSED [ 40%]
+test_logic.py::TestCalculateDiscount::test_calculate_discount_ok[100-0.2-80.0] PASSED [ 43%]
+test_logic.py::TestCalculateDiscount::test_calculate_discount_ok[50-0-50.0] PASSED [ 45%]
+test_logic.py::TestCalculateDiscount::test_calculate_discount_ok[200-1-0.0] PASSED [ 48%]
+test_logic.py::TestCalculateDiscount::test_calculate_discount_invalid_discount_raises[-0.1] PASSED [ 51%]
+test_logic.py::TestCalculateDiscount::test_calculate_discount_invalid_discount_raises[1.5] PASSED [ 54%]
+test_logic.py::TestFlattenList::test_flatten_list[nested0-expected0] PASSED [ 56%]
+test_logic.py::TestFlattenList::test_flatten_list[nested1-expected1] PASSED [ 59%]
+test_logic.py::TestFlattenList::test_flatten_list[nested2-expected2] PASSED [ 62%]
+test_logic.py::TestFlattenList::test_flatten_list[nested3-expected3] PASSED [ 64%]
+test_logic.py::TestFlattenList::test_flatten_list[nested4-expected4] PASSED [ 67%]
+test_logic.py::TestWordFrequencies::test_to_be_or_not PASSED             [ 70%]
+test_logic.py::TestWordFrequencies::test_hello_hello PASSED              [ 72%]
+test_logic.py::TestWordFrequencies::test_empty PASSED                    [ 75%]
+test_logic.py::TestWordFrequencies::test_python_repeated PASSED          [ 78%]
+test_logic.py::TestWordFrequencies::test_punctuation_ignored PASSED      [ 81%]
+test_logic.py::TestIsPrime::test_is_prime[2-True] PASSED                 [ 83%]
+test_logic.py::TestIsPrime::test_is_prime[3-True] PASSED                 [ 86%]
+test_logic.py::TestIsPrime::test_is_prime[4-False] PASSED                [ 89%]
+test_logic.py::TestIsPrime::test_is_prime[0-False] PASSED                [ 91%]
+test_logic.py::TestIsPrime::test_is_prime[1-False] PASSED                [ 94%]
+test_logic.py::TestIsPrime::test_is_prime[5-True] PASSED                 [ 97%]
+test_logic.py::TestIsPrime::test_is_prime[97-True] PASSED                [100%]
+
+============================= 37 passed in 0.06s ==============================
+
+Process finished with exit code 0
