@@ -8,4 +8,5 @@ def fpolacz_i_podnies_do_szescianu(lista1, lista2):
         wynik.append(x ** 3)
     return wynik
 
-print(fpolacz_i_podnies_do_szescianu([ 2, 3, 4], [5, 6, 4]))
+
+print(fpolacz_i_podnies_do_szescianu([2, 3, 4], [5, 6, 4]))

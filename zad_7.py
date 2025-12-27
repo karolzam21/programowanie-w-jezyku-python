@@ -2,10 +2,12 @@ import requests
 url = 'https://api.openbrewerydb.org/v1/breweries?per_page='
 LbBrowarow = 20
 
+
 class Brewery:
     id: str
     name: str
-    brewery_type = ['micro', 'nano', 'regional', 'brewpub', 'large', 'planning', 'bar', 'contract', 'proprietor',
+    brewery_type = ['micro', 'nano', 'regional', 'brewpub', 'large',
+                    'planning', 'bar', 'contract', 'proprietor',
                     'closed']
     address_1: str
     address_2: str
@@ -45,6 +47,7 @@ class Brewery:
             res = res + f"{p} = {w}\n"
         return res
 
+
 def main():
     res = requests.get(url + str(LbBrowarow))
     breweries = res.json()
@@ -53,8 +56,10 @@ def main():
 
     for b in breweries[:LbBrowarow]:
         bw.append(Brewery(brewery=b))
-        print(f"{chr(27)}[4m {i + 1} - {str(b['name'])} {chr(27)}[0m \n" + str(bw[i]))
+        print(f"{chr(27)}[4m {i + 1} - {str(b['name'])} "
+              f"{chr(27)}[0m \n" + str(bw[i]))
         i = i + 1
+
 
 if __name__ == '__main__':
     main()

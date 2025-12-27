@@ -1,14 +1,16 @@
-#Aby uruchomić poprawnie wpisać w terminalu np. python zad_8.py -city=BERLIN
+'#Aby uruchomić poprawnie wpisać w terminalu np. python zad_8.py -city=BERLIN'
 import requests
 import argparse
 
 url = 'https://api.openbrewerydb.org/v1/breweries'
 LbBrowarow = 20
 
+
 class Brewery:
     id: str
     name: str
-    brewery_type = ['micro', 'nano', 'regional', 'brewpub', 'large', 'planning', 'bar', 'contract', 'proprietor',
+    brewery_type = ['micro', 'nano', 'regional', 'brewpub', 'large',
+                    'planning', 'bar', 'contract', 'proprietor',
                     'closed']
     address_1: str
     address_2: str
@@ -48,9 +50,12 @@ class Brewery:
             res = res + f"{p} = {w}\n"
         return res
 
+
 def main():
-    parser = argparse.ArgumentParser(description="Skrypt pobierający dane o browarach w wybranym mieście")
-    parser.add_argument("-city", help="masto w którym funkcjonuje browar")
+    parser = argparse.ArgumentParser(
+        description="Skrypt pobierający dane o browarach w wybranym mieście")
+    parser.add_argument(
+        "-city", help="masto w którym funkcjonuje browar")
     args = parser.parse_args()
     params = {}
 
@@ -66,8 +71,10 @@ def main():
 
     for b in breweries[:LbBrowarow]:
         bw.append(Brewery(brewery=b))
-        print(f"{chr(27)}[4m {i + 1} - {str(b['name'])} {chr(27)}[0m \n" + str(bw[i]))
+        print(f"{chr(27)}[4m {i + 1} - {str(b['name'])} "
+              f"{chr(27)}[0m \n" + str(bw[i]))
         i = i + 1
+
 
 if __name__ == '__main__':
     main()
