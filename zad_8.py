@@ -4,6 +4,7 @@ import argparse
 url = 'https://api.openbrewerydb.org/v1/breweries'
 LbBrowarow = 20
 
+
 class Brewery:
     id: str
     name: str
@@ -46,6 +47,7 @@ class Brewery:
         for p, w in self.__dict__.items():
             res = res + f"{p} = {w}\n"
         return res
+
 
 def main():
     parser = argparse.ArgumentParser(description="Skrypt pobierający dane o browarach w wybranym mieście")
